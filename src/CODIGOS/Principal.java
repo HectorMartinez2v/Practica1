@@ -15,11 +15,12 @@ public class Principal {
         
         Scanner digito = new Scanner(System.in);
         System.out.println("Digite el primer numeros enteros: ");
-        int numero1= digito.nextInt();
+        float numero1= digito.nextFloat();
         System.out.println("Digite el segundo numeros enteros: ");
-        int numero2= digito.nextInt();
+        float numero2= digito.nextFloat();
         
-        int mult = numero1 * numero2;
+        float mult = numero1 * numero2;
+        System.out.println("El resultado es :"+mult);
         
 }
     
