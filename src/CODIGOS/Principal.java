@@ -15,12 +15,12 @@ public class Principal {
         
         Scanner digito = new Scanner(System.in);
         System.out.println("Digite la base del triangulo: ");
-        float base= digito.nextFloat();
+        double base= digito.nextDouble();
         System.out.println("Digite la altura del trinagulo: ");
-        float altura= digito.nextFloat();
+        double altura= digito.nextDouble();
         
-        float triangulo = (base*altura)/2;
-        System.out.println("El area del triangulo es :"+triangulo +"cm");
+        double area = (base*altura)/2;
+        System.out.println("El area del triangulo es :"+area +"cm");
         
 }
     
