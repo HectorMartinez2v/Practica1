@@ -10,17 +10,17 @@ import java.util.*;
 public class Principal {
     
     public static void main (String args[]){
-        System.out.println("Hola mundo");
+        System.out.println("Programa que calcula el area de un rectangulo");
         
         
         Scanner digito = new Scanner(System.in);
-        System.out.println("Digite el primer numeros enteros: ");
-        float numero1= digito.nextFloat();
-        System.out.println("Digite el segundo numeros enteros: ");
-        float numero2= digito.nextFloat();
+        System.out.println("Digite la base del rectangulo: ");
+        float base= digito.nextFloat();
+        System.out.println("Digite la altura del rectangulo: ");
+        float altura= digito.nextFloat();
         
-        float mult = numero1 * numero2;
-        System.out.println("El resultado es :"+mult);
+        float rectangulo = base*altura;
+        System.out.println("El area del rectangulo es :"+rectangulo+ "cm");
         
 }
     
