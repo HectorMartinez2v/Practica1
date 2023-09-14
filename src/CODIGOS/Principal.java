@@ -2,6 +2,7 @@
 package CODIGOS;
 
 import java.util.*;
+import java.util.InputMismatchException;
 
 /**
  *
@@ -10,10 +11,12 @@ import java.util.*;
 public class Principal {
     
     public static void main (String args[]){
+        double num = 0;
         System.out.println("Programa que calcula el area de un triangulo");
         
-        
         Scanner digito = new Scanner(System.in);
+        
+        try{
         System.out.println("Digite la base del triangulo: ");
         double base= digito.nextDouble();
         System.out.println("Digite la altura del trinagulo: ");
@@ -23,5 +26,9 @@ public class Principal {
         System.out.println("El area del triangulo es :"+area +"cm");
         
 }
+        catch(InputMismatchException ex){
+            System.out.println("Debe de ingresar obligatoriamente un numero tipo double ");
+        }
+    }
     
 }
