@@ -12,9 +12,14 @@ public class Principal {
     public static void main (String args[]){
         System.out.println("Hola mundo");
         
-        System.out.println("Digite 2 numeros enteros: ");
-        Scanner numero1= new Scanner (System.in);
-        Scanner numero2= new Scanner (System.in);
+        
+        Scanner digito = new Scanner(System.in);
+        System.out.println("Digite el primer numeros enteros: ");
+        int numero1= digito.nextInt();
+        System.out.println("Digite el segundo numeros enteros: ");
+        int numero2= digito.nextInt();
+        
+        int mult = numero1 * numero2;
         
 }
     
