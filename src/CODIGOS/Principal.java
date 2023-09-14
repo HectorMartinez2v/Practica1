@@ -10,17 +10,17 @@ import java.util.*;
 public class Principal {
     
     public static void main (String args[]){
-        System.out.println("Programa que calcula el area de un rectangulo");
+        System.out.println("Programa que calcula el area de un triangulo");
         
         
         Scanner digito = new Scanner(System.in);
-        System.out.println("Digite la base del rectangulo: ");
+        System.out.println("Digite la base del triangulo: ");
         float base= digito.nextFloat();
-        System.out.println("Digite la altura del rectangulo: ");
+        System.out.println("Digite la altura del trinagulo: ");
         float altura= digito.nextFloat();
         
-        float rectangulo = base*altura;
-        System.out.println("El area del rectangulo es :"+rectangulo+ "cm");
+        float triangulo = (base*altura)/2;
+        System.out.println("El area del triangulo es :"+triangulo +"cm");
         
 }
     
